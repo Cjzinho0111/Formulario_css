@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /*Definindo a margem para toda a página do site ou seja esses elementos servem para tirar todo espaçamento do site*/
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    /*Colocando o display no body*/
+    justify-content: center;
+    /*Colocando o texto no centro, porém na horizontal*/
+    align-items: center;
+    /*Define o alinhamento dos itens no eixo transversal do flexbox*/
+    min-height: 100vh;
+    /*MIN=minímo do height, vh, seria o viewport, que é o tamanho total da página*/
+    background-image: url(./img/Plano_de_Fundo.jpg);
+    /*Tag para colocar imagem no fundo da página*/
+    background-size: cover;
+    background-position: center;
+}
+
+/* Caixa principal do meu formulário*/
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+}
+
+/*Alterando o tamanho do título de primeiro nível*/
+.container h1 {
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    /*Muda a posição do elemento de acordo com minha necessidade*/
+    width: 100%;
+    /*Ocupa 100% da caixa que é o container*/
+    height: 50px;
+    /*Define  a altura do elemento*/
+    margin: 30px 0;
+    /*Define a margem do elemento*/
+}
+/*Definindo toda altura, e toda largura da div*/
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid;
+    outline: none;
+    padding: 20px 45px 20px 20px;
+    color: #fff;
+}
+/*Alterando o comportamento do input quqe està dentro da caixa botão*/
+
+.input-box input::placeholder{
+    color: aquamarine;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 35%;
+    font-size: 20px;
+}
+
+.Lembrar-Senha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Lembrar-Senha label input{
+    accent-color: white;
+    margin-right: 5px;
+}
+
+
+.Lembrar-Senha a{
+    text-decoration: none;
+    color: white;
+}
+
+.Lembrar-Senha a:hover{
+    text-decoration: underline;
+}
+
+
+.Login{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.Login:hover{
+    background-color: transparent;
+    border: 2px solid;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.cadastro{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.cadastro a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cadastro a:hover{
+    text-decoration: underline;
+}
