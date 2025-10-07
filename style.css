@@ -60,6 +60,7 @@ body {
     outline: none;
     padding: 20px 45px 20px 20px;
     color: #fff;
+    border-radius: 40px;
 }
 /*Alterando o comportamento do input quqe està dentro da caixa botão*/
 
@@ -69,7 +70,7 @@ body {
 .input-box i {
     position: absolute;
     right: 20px;
-    top: 35%;
+    top: 25%;
     font-size: 20px;
 }
 
